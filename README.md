@@ -23,5 +23,10 @@ Automatically synchronize your Toggl entries to time sessions in Codebase
 * Set up a post commit hook on your repository or set up a cronjob to run the script every X minutes
 * Let it rip!
 
+## Ticket syntax ##
+* Match the project name in Toggl with the project name in Codebase (case insensitive)
+* If it can't match the project name, the time entry won't be added in Codebase
+* Add, for example, '#12' to the ticket description to add the time entry to that ticket within the found project
+
 ## Changelog ##
 * v1.0 - Released first version
