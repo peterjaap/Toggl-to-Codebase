@@ -1,0 +1,1 @@
+Download the Codebase PHP wrapper from peterjaap's Github; https://github.com/peterjaap/Codebase-PHP-wrapper and place the class file in this directory
