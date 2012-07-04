@@ -16,7 +16,7 @@ Automatically synchronize your Toggl entries to time sessions in Codebase
 * [peterjaap's Codebase PHP wrapper](https://github.com/peterjaap/Codebase-PHP-wrapper)
 
 ## Configuration ##
-* Place the script somewhere convenient
+* Place the script somewhere convenient (make sure the directory & tracktime.log are writable by the webserver)
 * Edit the details at the top of the file ($verbose will output all log calls, $sqlOutput will log the content of the SQLite database, $dryrun is used for testing and $dateFrom is the date from when the time entries will be retrieved).
 * Insert your employee's names in the $employees array
 * Insert the API credentials for Toggl and Codebase for your employees
