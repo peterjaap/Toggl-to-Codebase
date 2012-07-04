@@ -1,0 +1,7 @@
+AuthUserFile /home/timetrack/.htpasswd
+AuthGroupFile /dev/null
+AuthName "elgentos timetrack connector toggl-codebase"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>

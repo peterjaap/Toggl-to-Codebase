@@ -1,0 +1,3 @@
+Get the Toggl PHP SDK from davereid's Github page; https://github.com/davereid/toggl-php-sdk
+
+Put the contents of src/ in this directory.
