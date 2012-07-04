@@ -8,6 +8,7 @@ require_once("sqlite.setup.php");
 $verbose = true;
 $sqlOutput = false;
 $dryrun = false;
+$dateFrom = '03-07-2012'; // decide from which date on you want to retrieve the time entries
 
 if($sqlOutput) {
     print_r($db->query("SELECT * FROM entries")->fetchArray(SQLITE3_ASSOC));
@@ -40,7 +41,7 @@ foreach($employees as $employee) {
         $p[strtolower($project['name'])] = $project['permalink'];
     }
 
-    $entries = $t->timeEntriesLoadRecent(strtotime('03-07-2012'),strtotime("+1 year"));
+    $entries = $t->timeEntriesLoadRecent(strtotime($dateFrom),strtotime("+1 year"));
     foreach($entries->data->data as $entry) {
         // duration, billable, workspace (name,id), stop, updated_at, id, start, user_id, tag_names, description
         $minutes = ceil($entry->duration/60);
